@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<title>My Portfolio</title>
+        <link rel='stylesheet' href='style.css'>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    </head>
+    <body>
+        <ul class="sidenav">
+            <li><a href='#about'> About</a></li>
+            <li><a href='#projects'>Projects</a></li>
+            <li><a href='#contact'>Contact</a></li>
+        </ul>
+        
+        <div class="textbox">
+            <span>Erena</span>
+            <span>&nbsp;</span>
+            <span>Inoue</span>
+        </div>
+        <script>
+            $(".sidenav a").click(function (e) {
+                console.log("hereeee");
+                e.preventDefault();
+                $(".toggle").hide();
+                var toShow = $(this).attr('href');
+                $(".textbox").hide();
+                $(toShow).show();
+            });
+        </script>
+        
+<!-------------------About Page---------------------->
+        <div id="about" class="toggle" style="display:none">
+            <div class="container">
+                <h1>About</h1>
+                <div class="pre-text">
+                  &emsp; Computer science engineer aspiring to work in fashion-tech industry after graduating college. I enjoy front-end and back-end programming as well as statistical programming. I strive to better myself as a person and as an engineer everyday, and am always eager for opportunities to develop new skills.
+                </div>
+                <br>
+                <h2>Profile</h2>
+                <div class="text">
+                    Name: &emsp;&emsp;&nbsp;&emsp;&emsp; Erena Inoue <br>
+                    Nationality: &emsp; &emsp; Japanese <br>
+                    Gender:&emsp;&emsp;&emsp;&emsp; Female <br>
+                    Coding since:&emsp;&emsp;2018
+                </div>
+                <br>
+                <div class="icons">
+                    <a href='https://github.com/erenaci' target='_blank'><ion-icon name="logo-github"></ion-icon></a>
+                    <a href='https://www.linkedin.com/in/erena-inoue-30b79218b' target='_blank'><ion-icon name="logo-linkedin"></ion-icon></a>
+                </div>
+                
+                <h2>Background</h2>
+                    <div class="text">
+                        &emsp;Born in the U.S., I have moved around a lot in my childhood. I grew up in three cities, Tokyo, London, and New York, all of which I call my hometown. I will be graduating Tufts University in May 2022, with Bachelor of Science in Computer Science.
+                    </div>
+                
+                <h2>Technical Skills</h2>
+                    <div class="text">
+                        <div class="listelem">&emsp;<b>Programming:</b> C++, C, MATLAB</div>
+                        <div class="listelem">&emsp;<b>Front-end:</b> &nbsp;HTML, CSS, JavaScript (jQuery), Restful API</div>
+                        <div class="listelem">&emsp;<b>Back-end:</b> &nbsp;Node.js, Express</div>
+                        <div class="listelem">&emsp;<b>Database:</b> &nbsp;MongoDB</div>
+                        <div class="listelem">&emsp;<b>Version Control and Tools:</b> &nbsp;Git, Heroku</div>
+                        <div class="listelem">&emsp;<b>Statistical Programming:</b> &nbsp;R, SAS</div>
+                    </div>
+                
+                <h2>Relevant Coursework</h2>
+                    <div class="text">
+                        &emsp;Introduction to Computer Science, Data Structures, Discrete Mathematics, Machine Structures and Assembly Language, Web Programming, Introduction to Security (Fall 2020), Algortihms (Fall 2020)
+                    </div>
+                
+                <h2>Other Skills and Interests</h2>
+                    <div class="text">
+                        <div class="listelem">&emsp;<b>Foreign Languages:</b> Japanese, French (intermediate)</div>
+                        <div class="listelem">&emsp;<b>Interests:</b> Yoga, Fashion, Travel</div>
+                    </div>
+            </div>
+        </div>
+<!--------------------Projects Page---------------------->
+        <div id="projects" class="toggle" style="display:none">
+            <div class="container">
+            <h1>Projects</h1>
+              <div class="pre-text">
+                  &emsp; Please refer to my <a href="https://github.com/erenaci">GitHub</a> for programs/websites I have developed so far. Below is the example of projects that I am proud of.
+              </div>
+                
+            </div>
+        </div>
+<!---------------------Contat Page----------------------->
+        <div id="contact" class="toggle" style="display:none">
+                <div class="container">
+                    <h1>Get In Touch</h1>
+                    <div class = "form">
+                        <div class = "top-form"> 
+<!--                            <div class = "inner-form">-->
+                                <div class = "label">Name</div>
+                            <div class = "inner-form">
+                                <input class = "fill-width" type = "text" placeholder="First Last">
+                            </div>
+
+<!--                             <div class = "inner-form">-->
+                                <div class = "label">Email</div>
+                            <div class = "inner-form">
+                                <input class = "fill-width" type = "text" placeholder="example@gmail.com">
+                            </div>
+
+<!--                             <div class = "inner-form">-->
+                                <div class = "label">Phone</div>
+                            <div class = "inner-form">
+                                <input class = "fill-width" type = "text" placeholder="(987)6578903">
+                            </div> 
+                        </div>
+
+                         <div class = "middle-form"> 
+<!--                            <div class = "inner-form">-->
+                                <div class = "label">Subject</div>
+                            <div class = "inner-form">
+                                <input class = "fill-width" type = "text" placeholder="Subject">
+                            </div>
+                        </div>
+
+                        <div class = "bottom-form"> 
+<!--                            <div class = "inner-form">-->
+                                <div class = "label">Message</div>
+                            <div class = "inner-form">
+                                <textarea class = "fill-width" rows="5" placeholder="Any questions, opportunities, etc!"></textarea>
+                            </div>
+                        </div>
+
+
+                        <button class = "btn" type="button" onclick="submit()"> submit</button>   
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

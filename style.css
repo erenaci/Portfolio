@@ -1,0 +1,85 @@
+body, html {
+    margin: 0;
+    height: 100%;
+}
+
+.sidenav {
+    height: 100%;
+    margin-top: -50px;
+    top: 45%;
+    width: 20%;
+    vertical-align: middle;
+    position: fixed;
+    left: 0;
+}
+
+.sidenav li {
+    font-family: "Times New Roman", Times;
+    color: #ffffff;
+    padding-bottom: 50px;
+    padding-left: 5px;
+}
+
+.sidenav a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.sidenav a:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.textbox {
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    width: 55%;
+/*    max-width: 680px;*/
+    margin: 0 auto;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.container .pre-text{
+    margin: 0px 0px;
+    word-wrap: normal;
+    font-size: 14px;
+}
+
+.container .text{
+    margin: 0px 0px;
+    word-wrap: normal;
+    font-size: 14px;
+}
+
+.container .icons {
+    font-size: 25px;
+    color: #000000;
+}
+
+.container .form {
+    font-size: 14px;
+    text-align: center;
+}
+
+.label {
+    text-align: left;
+}
+
+.inner-form {
+    display: flex;
+}
+
+.fill-width {
+    flex: 1;
+}
